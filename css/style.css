@@ -1,0 +1,114 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Estilos gerais para o header */
+header {
+    background-color: #92D050;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre logo e menu */
+}
+
+/* Estilos para a logo */
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo h1 {
+    color: #424242;
+    margin-top: 10px;
+}
+
+/* Estilos para o menu */
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px; 
+    padding: 10px;
+    background-color: transparent;
+}
+
+.button {
+    background-color: #345511;
+    color:aliceblue;
+}
+
+.button:hover {
+    background-color: #92D050;
+    color: #345511;
+    border-color: #345511;
+}
+
+
+
+
+
+
+/* Estilos para computadores */
+@media (min-width: 769px) {
+    header {
+        display: flex;
+        justify-content: space-between; /* Espaço entre logo e menu */
+    }
+    
+    .menu ul {
+        justify-content: flex-start; /* Alinhamento flexível */
+    }
+
+
+
+
+
+/* Estilos para tablets */
+@media (min-width: 434px) and (max-width: 768px) {
+    header {
+        display: block; /* Empilhamento para tablets */
+    }
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 20px; /* Espaçamento entre a logo e o menu */
+    }
+    
+    .menu ul {
+        justify-content: center; /* Centraliza para tablets */
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 433px) {
+    header {
+        display: block; /* Empilhamento para celulares */
+    }
+
+    .menu ul {
+        display: inline-block; /* Layout vertical */
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu li {
+        margin-bottom: 10px; /* Espaçamento vertical para empilhamento */
+    }
+}
+}

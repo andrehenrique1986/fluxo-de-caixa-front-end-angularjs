@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="FluxoDeCaixa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/> <!-- Carrega o Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css"/> <!-- Seu próprio CSS -->
+    <title>Fluxo de Caixa</title>
+</head>
+<body ng-controller="Caixa">
+    <!-- Header com Flexbox -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center justify-content-between"> <!-- Flexbox para alinhamento -->
+                <div class="logo col-6 text-center"> <!-- Responsivo para diferentes colunas -->
+                    <img src="img/icon.svg" alt="Logo" style="width: 100px; height: 100px;"/>
+                    <h1>Movimentação Financeira</h1>
+                </div><!--#End Div logo-->
+                
+                <div class="menu col-6"> <!-- Uso do Bootstrap para alinhamento -->
+                    <ul class="nav justify-content-center"> <!-- Classe nav do Bootstrap -->
+                        <li class="nav-item">
+                            <button class="btn button" href="#">Painel</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn button" href="#">Categorias</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn button" href="#">Forma de Pagamento</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn button" href="#">Dashboard</button>
+                        </li>
+                    </ul>
+                </div><!--#End Div menu-->
+            </div><!--#End Row-->
+        </div><!--#End Container Header-->
+    </header><!--#End Header-->
+
+    <!-- Área principal -->
+    <div class="container">
+        <!-- Adicione seu conteúdo principal aqui -->
+    </div><!--#End Class Container-->
+        
+    <!-- Scripts carregados no final do body -->
+    <script src="js/angularjs/angular.min.js"></script> <!-- AngularJS -->
+    <script src="js/angularjs/angular-route.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+    <script src="js/angularjs/app.js"></script> <!-- Seu código AngularJS -->
+</body><!--#End Body-->
+</html>
